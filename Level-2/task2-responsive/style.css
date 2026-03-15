@@ -1,0 +1,36 @@
+body{
+    font-family:Arial;
+    margin:0;
+}
+
+.topbar{
+    background:#111;
+    padding:15px;
+}
+
+.topbar a{
+    color:white;
+    margin-right:20px;
+    text-decoration:none;
+}
+
+.menu-icon{
+    display:none;
+}
+
+/* Mobile responsive */
+
+@media (max-width:768px){
+
+.topbar a{
+    display:block;
+    margin:10px 0;
+}
+
+.menu-icon{
+    display:block;
+    color:white;
+    font-size:22px;
+}
+
+}
