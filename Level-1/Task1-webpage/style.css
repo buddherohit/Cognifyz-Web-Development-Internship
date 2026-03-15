@@ -1,55 +1,147 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
 body{
-    font-family: "Segoe UI", sans-serif;
-    margin:0;
-    background:#f4f6f8;
-    text-align:center;
+background:#f4f6f8;
+color:#333;
 }
 
-header{
-    background:#1e293b;
-    color:white;
-    padding:20px;
+/* Navbar */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#111827;
+padding:15px 40px;
+color:white;
 }
 
-.navigation a{
-    color:white;
-    text-decoration:none;
-    margin:0 15px;
-    font-weight:500;
+.logo{
+font-size:22px;
 }
 
-.navigation a:hover{
-    color:#38bdf8;
+.navbar a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-size:16px;
 }
 
-.content{
-    margin-top:30px;
+.navbar a:hover{
+color:#38bdf8;
 }
 
-img{
-    margin-top:15px;
-    border-radius:10px;
+
+/* Hero Section */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:60px 10%;
 }
 
-.form-section{
-    margin-top:40px;
+.hero-text{
+max-width:500px;
 }
 
-input{
-    padding:10px;
-    border:1px solid #ccc;
-    border-radius:5px;
+.hero-text h1{
+font-size:40px;
+margin-bottom:15px;
 }
 
-button{
-    padding:10px 18px;
-    background:#2563eb;
-    color:white;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
+.hero-text p{
+font-size:16px;
+line-height:1.6;
+margin-bottom:20px;
 }
 
-button:hover{
-    background:#1d4ed8;
+.hero-text button{
+padding:12px 25px;
+background:#2563eb;
+border:none;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+.hero-text button:hover{
+background:#1d4ed8;
+}
+
+.hero-image img{
+border-radius:12px;
+}
+
+
+/* Contact Section */
+
+.contact{
+background:white;
+padding:50px;
+text-align:center;
+}
+
+.contact h2{
+margin-bottom:20px;
+}
+
+.contact form{
+max-width:400px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.contact input,
+.contact textarea{
+padding:12px;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+.contact button{
+padding:12px;
+background:#2563eb;
+border:none;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+.contact button:hover{
+background:#1d4ed8;
+}
+
+
+/* Footer */
+
+footer{
+background:#111827;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:40px;
+}
+
+
+/* Responsive */
+
+@media (max-width:768px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-image{
+margin-top:30px;
+}
+
 }
